@@ -1,0 +1,24 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+.dates {
+	height: 100px !important;
+	.slick-slider {
+		width: 100% !important;
+	}
+
+	.dates-count {
+		cursor: grab;
+	}
+}
+
+.unDate::before {
+	content: '';
+	width: 1px;
+	height: 40px;
+	background-color: #b63232;
+	transform: rotate(45deg);
+	position: absolute;
+	left: 20px;
+	top: 0;
+}

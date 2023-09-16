@@ -1,0 +1,10 @@
+@import './alerts.scss';
+@import './auth.scss';
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+}

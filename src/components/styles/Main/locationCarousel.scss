@@ -1,0 +1,76 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+.locationCarousel {
+	.locationContainer {
+		@media screen and (max-width: 600px) {
+			&::after {
+				content: '';
+				height: 2px;
+				width: 80%;
+				margin: auto;
+				background-color: #e1e1e1;
+				position: absolute;
+				bottom: 1px;
+				z-index: -1;
+			}
+		}
+	}
+	.slick-initialized {
+		height: 100% !important;
+	}
+	.slick-initialized .slick-list {
+		// overflow: visible !important;
+		// overflow-x: hidden;
+		height: 100% !important;
+	}
+	.slick-initialized .slick-slide {
+		transform: scale(1);
+		transition: transform 300ms;
+		opacity: 1;
+		position: relative;
+		height: 100% !important;
+		div {
+			height: 100%;
+			@media screen and (max-width: 600px) {
+				height: 97%;
+			}
+		}
+	}
+	.slick-initialized .slick-track {
+		height: 100% !important;
+	}
+	.slick-initialized .slick-select::after {
+		background: #8f7ef3;
+		height: 2px;
+		width: 50px;
+		content: '';
+		display: block;
+		position: relative;
+		bottom: 0;
+		top:-5px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 6px;
+	}
+	.nearme {
+		// transform: height 900ms ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+	.selected::after {
+		background: #8f7ef3;
+		height: 2px;
+		width: 50px;
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0px;
+		top:4.5rem;
+		border-radius: 6px;
+		transform: scaleY() 300ms ease-in;
+	}
+
+	.slick-track {
+		margin-left: 0 !important;
+	}
+}

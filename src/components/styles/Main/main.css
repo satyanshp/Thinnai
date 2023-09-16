@@ -1,0 +1,44 @@
+.button {
+	background: black !important;
+}
+
+.location__city-carousel {
+	scroll-behavior: smooth !important;
+}
+.location__city-carousel::-webkit-scrollbar {
+	display: none;
+}
+
+/* Resposive CSS */
+.filter-header {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+
+	color: #333232;
+}
+.filter-sub-header {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	display: flex;
+	align-items: center;
+
+	color: #000000;
+}
+.filter-p {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 19px;
+
+	color: #000000;
+}
+.filter__list::-webkit-scrollbar {
+	display: none;
+}

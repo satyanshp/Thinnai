@@ -1,0 +1,22 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+.photoCarousel {
+	.slick-initialized .slick-list {
+		overflow: visible;
+		// overflow-x: hidden;
+	}
+	.slick-initialized .slick-slide {
+		transform: scale(1.2);
+		transition: transform 300ms;
+		position: relative;
+	}
+
+	.slick-initialized .slick-center,
+	.slick-current {
+		transform: scale(1.5);
+		opacity: 1;
+		position: relative;
+		z-index: 2;
+	}
+}

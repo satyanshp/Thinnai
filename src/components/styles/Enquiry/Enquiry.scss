@@ -1,0 +1,15 @@
+.swiper-pagination-bullet {
+  background-color: white;
+}
+
+
+@media (min-width: 2400px) {
+  .mySwiper{
+    height: 26vh !important;
+  }
+}
+@media (min-width: 2600px) {
+  .mySwiper{
+    height: 20vh !important;
+  }
+}

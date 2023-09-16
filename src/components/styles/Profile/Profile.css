@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.profile-body {
+  margin: 0 auto !important;
+  width: 65vw !important;
+  padding: 10vh 24px !important;
+}
+
+.Account-font {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 44px;
+  color: #333232;
+}/*# sourceMappingURL=Profile.css.map */
