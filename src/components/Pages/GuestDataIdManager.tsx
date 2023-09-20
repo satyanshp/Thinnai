@@ -3,16 +3,13 @@ import TopCircles from '../elements/Common/TopCircles';
 import GuestDataForm from '../elements/GuestAuth/GuestDataForm';
 import RegistrationNavbar from '../elements/GuestAuth/subElements/RegistrationNavbar';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
 
 const GuestDataIdManager = () => {
 	const user = useSelector<RootState, any>(state => state.guestAuth.user);
 	const userProfileData = useSelector<RootState, any>(state => state.profile.userData);
-	const navigate = useNavigate();
 	return (
 		<Grid container component='main' sx={{ height: '100vh' }}>
 			<RegistrationNavbar />

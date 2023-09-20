@@ -12,11 +12,9 @@ import CommunityRes from '../elements/GuestLanding/CommunityRes';
 import Footer from '../elements/GuestLanding/Footer';
 import How from '../elements/GuestLanding/How';
 import Memories from '../elements/GuestLanding/Memories';
-import More from '../elements/GuestLanding/More';
 import Try from '../elements/GuestLanding/Try';
 import Video from '../elements/GuestLanding/Video';
 import What from '../elements/GuestLanding/What';
-import Why from '../elements/GuestLanding/Why';
 import HostFeatured from '../elements/HostLanding/HostFeatured';
 import SectionTitle from '../elements/HostLanding/SectionTitle';
 import '../styles/Landing/Landing.css';
@@ -27,6 +25,7 @@ import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
+import Feature from '../elements/GuestLanding/Feature';
 
 const GuestLanding = () => {
 	const navigate = useNavigate();
@@ -38,6 +37,42 @@ const GuestLanding = () => {
 		navigate(ROUTES.EXPLORE);
 		resetStore('RESET_LANDING');
 	};
+
+	const moreArray = [
+		{
+			img:'/assets/images/page/more1.svg',
+			header:'Meetings & Remote work',
+			caption:'Private & Inspiring work spaces curated for productive work sessions and meetings.'
+		},
+		{
+			img:'/assets/images/page/more2.svg',
+			header:'Host Workshops',
+			caption:'Beautiful spaces to host workshops which induces creativity and adds more value to the entire experience'
+		},
+		{
+			img:'/assets/images/page/more3.svg',
+			header:'Solo Dates',
+			caption:'Doing anything you like peacefully, while having your favourite food as & when you like.'
+		}
+	];
+
+	const whyArray = [
+		{
+			img:'/assets/images/page/why1.svg',
+			header:'Affordable private dining',
+			caption:'A space for 2 is more affordable than the coffee for 2 at a Cafe.'
+		},
+		{
+			img:'/assets/images/page/why2.svg',
+			header:'Freedom of Choice',
+			caption:'Order your favourite food & Drinks from any Outlet in the area.'
+		},
+		{
+			img:'/assets/images/page/why3.svg',
+			header:'Personalised Experience',
+			caption:'Your Choice of Ambience, Food, Drinks and music only at Thinnai.'
+		}
+	]
 
 	return (
 		<Box fontFamily="'Montserrat', sans-serif" className='page'>
@@ -212,7 +247,11 @@ const GuestLanding = () => {
 			</Box>
 			<Box height={100} />
 			<Box>
-				<Why />
+				<Feature
+					header='Why Thinnai?'
+					caption='Of many things, here’s the what you’d love the most.'
+					contentArray={whyArray}
+				/>
 			</Box>
 			<Box height={{ md: 150, sm: 50, xs: 50 }} />
 			<Box>
@@ -264,7 +303,11 @@ const GuestLanding = () => {
 			// 	},
 			// }}
 			>
-				<More />
+				<Feature
+					header='More than just a dining space!'
+					caption='Our Beautiful Thinnai spaces are used for many creative works.'
+					contentArray={moreArray}
+				/>
 			</Box>
 			<Box height={{ md: 100, sm: 100, xs: 100 }} />
 			<Box>

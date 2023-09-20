@@ -109,7 +109,7 @@ const HostFooter = ({ caller }: { caller: string }) => {
 						/>
 						<div
 							onClick={() =>
-								caller == 'Host'
+								caller === 'Host'
 									? navigate(ROUTES.POLICY_BASE + '/guest-terms-of-use')
 									: navigate(ROUTES.POLICY_BASE + '/host-terms-of-use')
 							}

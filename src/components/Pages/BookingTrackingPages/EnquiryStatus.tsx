@@ -2,7 +2,7 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import { Box, Button, Divider, Paper, styled, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { RootState } from '../../../store';
 import { timeArray } from '../../../utils/consts';
 import { ROUTES } from '../../../utils/routing/routes';
@@ -12,10 +12,10 @@ import Counter from '../../elements/Explore/Counter';
 import Loading from '../../elements/Loading/Loading';
 import BookingDetails from '../../elements/Payment/BookingDetails';
 import DetailPicture from '../../elements/Payment/DetailPicture';
-import TotalAmount from '../../elements/Payment/TotalAmount';
+// import TotalAmount from '../../elements/Payment/TotalAmount';
 
 const EnquiryStatus = () => {
-	const navigate = useNavigate();
+	// const navigate = useNavigate();
 
 	const CounterButton = styled(Paper)(({ theme }) => ({
 		width: '1rem',
@@ -99,7 +99,7 @@ const EnquiryStatus = () => {
 
 	useEffect(() => {
 		if (enquiryStatus.length === 0) {
-			navigate(ROUTES.EXPLORE);
+			// navigate(ROUTES.EXPLORE);
 		}
 	}, []);
 
@@ -343,7 +343,7 @@ const EnquiryStatus = () => {
 												xs: '0px 1.25rem',
 											}}
 										>
-											<TotalAmount />
+											{/* <TotalAmount /> */}
 										</Box>
 									</>
 								)}

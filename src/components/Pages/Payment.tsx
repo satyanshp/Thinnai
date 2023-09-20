@@ -13,7 +13,7 @@ import {
 } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { RootState } from '../../store';
 import { ROUTES } from '../../utils/routing/routes';
 import NavBar from '../elements/Explore/NavBar';
@@ -22,13 +22,13 @@ import BookingDetails from '../elements/Payment/BookingDetails';
 import DetailPicture from '../elements/Payment/DetailPicture';
 import Note from '../elements/Payment/Note';
 import OtherPayment from '../elements/Payment/OtherPayment';
-import PaymentSummary from '../elements/Payment/PaymentSummary';
+// import PaymentSummary from '../elements/Payment/PaymentSummary';
 import ProceedButton from '../elements/Payment/ProceedButton';
 import SummaryData from '../elements/Payment/SummaryData';
-import TotalAmount from '../elements/Payment/TotalAmount';
+// import TotalAmount from '../elements/Payment/TotalAmount';
 
 const Payment = () => {
-	const navigate = useNavigate();
+	// const navigate = useNavigate();
 
 	const enquiries = useSelector<RootState, any>(state => state.enquiry.enquiries);
 
@@ -75,7 +75,7 @@ const Payment = () => {
 
 	useEffect(() => {
 		if (enquiries.length === 0) {
-			navigate(ROUTES.EXPLORE);
+			// navigate(ROUTES.EXPLORE);
 		}
 	}, []);
 
@@ -416,7 +416,7 @@ const Payment = () => {
 										xs: '0px 1.25rem',
 									}}
 								>
-									<TotalAmount />
+									{/* <TotalAmount /> */}
 								</Box>
 								<Box
 									display={{
@@ -467,7 +467,7 @@ const Payment = () => {
 										xs: '0px 1.25rem',
 									}}
 								>
-									<TotalAmount />
+									{/* <TotalAmount /> */}
 								</Box>
 							</Box>
 							<Box marginTop='1.625rem'>
@@ -488,7 +488,7 @@ const Payment = () => {
 						}}
 						margin='auto'
 					>
-						<PaymentSummary />
+						{/* <PaymentSummary /> */}
 					</Box>
 				)}
 				{bookingDetails && (
