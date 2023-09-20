@@ -4,7 +4,7 @@ import HostCommunity from '../elements/HostLanding/HostCommunity';
 import HostFeatured from '../elements/HostLanding/HostFeatured';
 import HostFooter from '../elements/HostLanding/HostFooter';
 import SectionTitle from '../elements/HostLanding/SectionTitle';
-import Video from '../elements/HostLanding/Video';
+import Video from '../elements/HostLanding/VideoHeader';
 import Community from '../elements/HostLanding/Community';
 import WhyHosting from '../elements/HostLanding/WhyHosting';
 import StartHosting from '../elements/HostLanding/StartHosting';
@@ -12,10 +12,18 @@ import What from '../elements/HostLanding/What';
 import Testimonial from '../elements/HostLanding/Testimonial';
 import FeaturedBlogs from '../elements/HostLanding/FeaturedBlogs';
 import Faqs from './Faqs';
-
+import HostNav from "../elements/HostLanding/HostNav";
 
 const HostLanding = () => {
-
+	const textLoop = [
+		"Hosting!",
+		"Experience!",
+		"Memories!",
+		"Moments!",
+		"Friends!",
+		"Community!",
+		"Income!",
+	  ];
 	// const blogs = [
 	// 	{
 	// 		category: 'Blogs',
@@ -52,7 +60,7 @@ const HostLanding = () => {
 
 	return (
 		<Box>
-			<Video/>
+			<Video textLoop={textLoop} Nav={HostNav} Host={true} text='You need a big space in your heart and small space at your home to be a Host on Thinnai'/>
 			{/* Community */}
 			<Community/>
 			{/* Why hosting */}
