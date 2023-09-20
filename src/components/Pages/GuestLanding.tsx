@@ -9,7 +9,6 @@ import { ROUTES } from '../../utils/routing/routes';
 import Carousel from '../elements/GuestLanding/Carousel';
 import Community from '../elements/GuestLanding/Community';
 import CommunityRes from '../elements/GuestLanding/CommunityRes';
-import Footer from '../elements/GuestLanding/Footer';
 import How from '../elements/GuestLanding/How';
 import Memories from '../elements/GuestLanding/Memories';
 import Try from '../elements/GuestLanding/Try';
@@ -26,6 +25,7 @@ import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import Feature from '../elements/GuestLanding/Feature';
+import HostFooter from '../elements/HostLanding/HostFooter';
 
 const GuestLanding = () => {
 	const navigate = useNavigate();
@@ -232,9 +232,6 @@ const GuestLanding = () => {
 							BOOK NOW
 						</Button>
 					</Box>
-					{/* <Box top= {{sm:'95%',xs:'70%'}} width= {{sm:'80%',xs:'88%'}} sx={{position:'absolute',}}>
-          <MenuTabs/>
-        </Box> */}
 				</Box>
 			</Box>
 			<Box height={{ md: 160, xs: 0 }} />
@@ -351,7 +348,7 @@ const GuestLanding = () => {
 				<CommunityRes />
 			</Box>
 			<Box>
-				<Footer />
+				<HostFooter caller='Guest' />
 			</Box>
 		</Box>
 	);

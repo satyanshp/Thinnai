@@ -41,7 +41,7 @@ const PersonalInfo = lazy(() => import('./components/elements/Profile/PersonalIn
 const PrivacySharing = lazy(() => import('./components/elements/Profile/PrivacySharing'));
 const Services = lazy(() => import('./components/elements/Profile/Services'));
 const Sharing = lazy(() => import('./components/elements/Profile/Sharing'));
-const HostLanding = lazy(() => import('./components/elements/HostLanding/HostLanding'));
+const HostLanding = lazy(() => import('./components/Pages/HostLanding'));
 const Chat = lazy(() => import('./components/Pages/Chat'));
 const Congratulations = lazy(() => import('./components/Pages/Congratulations'));
 const Detail = lazy(() => import('./components/Pages/Detail'));

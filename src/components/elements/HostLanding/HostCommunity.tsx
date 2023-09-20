@@ -31,9 +31,7 @@ const HostCommunity = () => {
 
 		loading: false,
 	});
-	const [hostSelect, setHostSelect] = useState(false);
 	const classes = useStyles();
-	const breakPoint = useMediaQuery('(max-width:600px)');
 	const mdBreakPoint = useMediaQuery('(max-width:900px)');
 
 	return (

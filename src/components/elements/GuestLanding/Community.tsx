@@ -38,7 +38,6 @@ const Community = () => {
 	const [dataSubmitted, setDataSubmitted] = useState(false);
 	const [loadingContentLogging, setLoadingContentLogging] = useState(false);
 	const classes = useStyles();
-	const breakPoint = useMediaQuery('(max-width:600px)');
 	const mdBreakPoint = useMediaQuery('(max-width:900px)');
 
 	return (
