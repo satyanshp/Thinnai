@@ -20,8 +20,8 @@ interface VideoProp {
   textLoop: string[];
   Nav: () => JSX.Element;
   Host?: Boolean;
-  text:string;
-  loopPrefix?:string;
+  text: string;
+  loopPrefix?: string;
 }
 
 const VideoHeader = ({ textLoop, Nav, Host = false, text, loopPrefix }: VideoProp) => {

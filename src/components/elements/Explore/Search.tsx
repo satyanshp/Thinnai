@@ -103,8 +103,6 @@ const Search = ({ responsiveConditionalData = false, setSearchState, onClick }: 
 				<Box display='flex' width='50%' flexDirection='column' justifyContent='space-between'>
 					<Box
 						display='flex'
-						// alignItems='center'
-						// justifyContent='center'
 						sx={{
 							fontWeight: '400',
 							fontSize: '0.875rem',

@@ -17,7 +17,6 @@ import LoadingAboutPlace from '../elements/Detail/LoadingAboutPlace';
 import BottomButtonPaymentSummary from '../elements/Detail/mobileSubElements/BottomButtonPaymentSummary';
 import PropertyPicturesCarousel from '../elements/Detail/subElements/PropertyPicturesCarousel';
 import NavBar from '../elements/Explore/NavBar';
-import Search from '../elements/Explore/Search';
 import '../styles/Detail/detail.css';
 
 const Detail = () => {
@@ -67,10 +66,6 @@ const Detail = () => {
 
 	//To change SearchBar to Searched Details
 	const [stateSearched, setStateSearched] = useState(false);
-	const searched = () => {
-		setSearchState(false);
-		setStateSearched(true);
-	};
 
 	const parentRef = useRef<null | HTMLDivElement>(null);
 
@@ -159,11 +154,6 @@ const Detail = () => {
 									state={searchState}
 									searchTabClose={() => setSearchState(false)}
 								/>
-							)}
-							{searchState && (
-								<Box position='absolute' width='590px' top='81px' left='29.5%' zIndex='5'>
-									<Search onClick={searched} />
-								</Box>
 							)}
 						</Box>
 						{!viewBook && (
